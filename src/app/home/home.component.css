@@ -1,10 +1,22 @@
 .wrapper {
     display: flex;
-    /* height: 100vh; */
+    /* min-height: 100vh; */
   }
   
   .main {
     width: 100%;
+  }
+  .sidebar {
+    /* position: fixed; */
+  /* top: 0;
+  bottom: 0; */
+  /* width: 250px; */
+  }
+  
+  .content {
+    /* margin-left: 250px; */
+    overflow-y: auto;
+    height: 100vh;
   }
   
   @media (max-width: 768px) {
@@ -12,9 +24,9 @@
       flex-direction: column;
     } */
   
-    .main {
+    /* .main {
       width: 100%;
-    }
+    } */
   
     #sidebar.expand {
       position: absolute;
