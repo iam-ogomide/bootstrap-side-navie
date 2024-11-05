@@ -9,6 +9,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ProfileComponent } from './profile/profile.component';
 import { HomeComponent } from './home/home.component';
 import { NavComponent } from './nav/nav.component';
+import { LineChartComponent } from './line-chart/line-chart.component';
+import { HighchartsChartModule } from 'highcharts-angular';
 
 @NgModule({
   declarations: [
@@ -18,11 +20,13 @@ import { NavComponent } from './nav/nav.component';
     NavbarComponent,
     ProfileComponent,
     HomeComponent,
-    NavComponent
+    NavComponent,
+    LineChartComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HighchartsChartModule
   ],
   providers: [],
   bootstrap: [AppComponent]
