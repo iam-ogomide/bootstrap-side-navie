@@ -185,3 +185,66 @@
     background: var(--color-light);
     cursor: pointer;
 }
+
+
+
+/* RECENT TRANSACTION  */
+.recent-transaction{
+    margin-top: 2rem;
+}
+.recent-transaction img{
+    width: 2.2rem;
+}
+.recent-transaction .header{
+    display: flex;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+}
+.recent-transaction .header a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--color-primary);
+}
+.recent-transaction .transaction{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem var(--card-padding);
+    border-radius: var(--card-border-radius);
+}
+.recent-transaction .transaction:hover{
+    background: var(--color-white);
+    cursor: pointer;
+}
+.recent-transaction .transaction .service{
+    display: flex;
+     gap: 1rem;
+}
+.recent-transaction .transaction .service .icon{
+    padding: var(--padding-1);
+    border-radius: var(--border-radius-1);
+    display: flex;
+    align-items: center;
+}
+.recent-transaction .card-details{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.recent-transaction .card-details .card{
+    display: flex;
+    width: 4.6rem;
+    align-items: center;
+    height: 3rem;
+    justify-content: center;
+    border-radius: var(--border-radius-2);
+}
+
+
+/* MEDIA QUERY TABLET  */
+@media screen and (max-width:1024px) {
+    .cards{
+        grid-template-columns: 1fr 1fr;
+    }
+}
