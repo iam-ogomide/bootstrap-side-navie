@@ -1,25 +1,81 @@
 .wrapper {
-    display: flex;
-    /* height: 100vh; */
-  }
-  
-  .main {
+  display: flex;
+  /* min-height: 100vh; */
+}
+
+.main {
+  width: 100%;
+}
+.sidebar {
+  /* position: fixed; */
+/* top: 0;
+bottom: 0; */
+/* width: 250px; */
+}
+
+.content {
+  /* margin-left: 250px; */
+  overflow-y: auto;
+  height: 100vh;
+}
+
+/* INVESTMENTS */
+.investments {
+  background: var(--color-white);
+  border-radius: var(--card-border-radius);
+  padding: var(--card-padding);
+}
+
+.investments .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.investments .header a {
+  display: flex;
+  align-items: center;
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.investments table {
+  width: 100%;
+  border-radius: var(--card-border-radius);
+  overflow: hidden;
+}
+
+.investment-logo {
+  width: 2.4rem;
+}
+
+table.table-responsive-sm tbody tr:hover {
+  background: var(--color-light);
+  cursor: pointer;
+}
+
+.text-danger {
+  color: #ff4d4f;
+}
+
+.text-success {
+  color: #4caf50;
+}
+
+
+@media (max-width: 768px) {
+  /* .wrapper {
+    flex-direction: column;
+  } */
+
+  /* .main {
     width: 100%;
+  } */
+
+  #sidebar.expand {
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
   }
-  
-  @media (max-width: 768px) {
-    /* .wrapper {
-      flex-direction: column;
-    } */
-  
-    .main {
-      width: 100%;
-    }
-  
-    #sidebar.expand {
-      position: absolute;
-      width: 100%;
-      z-index: 1000;
-    }
-  }
-  
+}

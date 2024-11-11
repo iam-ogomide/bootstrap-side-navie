@@ -11,6 +11,7 @@ import { HomeComponent } from './home/home.component';
 import { NavComponent } from './nav/nav.component';
 import { LineChartComponent } from './line-chart/line-chart.component';
 import { HighchartsChartModule } from 'highcharts-angular';
+import { ProfileViewComponent } from './profile-view/profile-view.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { HighchartsChartModule } from 'highcharts-angular';
     ProfileComponent,
     HomeComponent,
     NavComponent,
-    LineChartComponent
+    LineChartComponent,
+    ProfileViewComponent
   ],
   imports: [
     BrowserModule,

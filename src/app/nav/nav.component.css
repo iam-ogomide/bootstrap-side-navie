@@ -96,3 +96,13 @@ nav .profile-area button{
         color: var(--color-dark);
     }
 }
+
+/* MEDIA QUERY TABLET  */
+@media screen and (max-width:600px){
+    nav .profile-area{
+        gap: 2.6rem;
+    }
+    nav .profile h5, nav .profile span{
+        display: none;
+    }
+}

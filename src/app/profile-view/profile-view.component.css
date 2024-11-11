@@ -1,0 +1,42 @@
+/* INVESTMENTS */
+.investments {
+    background: var(--color-white);
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+    overflow: hidden;
+}
+
+.investments .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.investments .header a {
+    display: flex;
+    align-items: center;
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+.table-responsive {
+    border-radius: var(--card-border-radius);
+}
+
+.investment-logo {
+    width: 2.4rem;
+}
+
+.table-striped tbody tr:hover {
+    background: var(--color-light);
+    cursor: pointer;
+}
+
+.text-danger {
+    color: #ff4d4f;
+}
+
+.text-success {
+    color: #4caf50;
+}
